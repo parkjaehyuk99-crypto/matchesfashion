@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATCHES FASHION</title>
+    <link rel="shortcut icon" href="images/main/matches_fashion.svg" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/matches.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div class="fixHead fll">
+            <nav class="notowM12n">
+                <button type="button" class="mui">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li>
+                        <span>CLOTHING</span>
+                        <ol class="notowR12n">
+                            <li><a href="list_casual_1pg.html">casual</a></li>
+                            <li><a href="list_minimal_1pg.html">minimal</a></li>
+                            <li><a href="list_street_1pg.html">street</a></li>
+                            <li><a href="list_vintage_1pg.html">vintage</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span>SHOES</span>
+                        <ol class="notowR12n">
+                            <li><a href="list_boots.html">boots</a></li>
+                            <li><a href="list_snekers.html">snekers</a></li>
+                            <li><a href="list_workers.html">workers</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span>BAGS</span>
+                        <ol class="notowR12n">
+                            <li><a href="list_cross_bag.html">crossbag</a></li>
+                            <li><a href="list_shoper_bag.html">shoper bag</a></li>
+                            <li><a href="list_shoulder_bag.html">shoulder bag</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span>ACCESSORIES</span>
+                        <ol class="notowR12n">
+                            <li><a href="list_belt.html">belt</a></li>
+                            <li><a href="list_hats.html">hats</a></li>
+                            <li><a href="list_sunglasses.html">sunglasses</a></li>
+                            <li><a href="list_wallet.html">wallet</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <h1>
+                <a href="index_after.html" class="merwR14">
+                    <strong class="merwK16">Matches Fashion</strong>
+                    Man
+                </a>
+            </h1>
+            <div>
+                <input type="button" value="mobBtn" title="mobile button">
+                <div class="notowM12n">
+                    <div>
+                        <input type="button" value="account" title="account button">
+                        <div class="accountPanel">
+                            <ol>
+                                <li><a href="acnt_profile.html">profile</a></li>
+                                <li><a href="acnt_loyalty.html">Loyalty</a></li>
+                                <li><a href="acnt_orderhistory.html">Order</a></li>
+                                <li><a href="index.html">Log out</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <a href="acnt_wishlist.html">Wishlist</a>
+                    <div>
+                        <input type="button" value="cart" title="cart button">
+                        <div class="cartPanel">
+                            <input type="button" value="close" title="remove button">
+                            <p class="merwR20">
+                                You have not added 
+                                any items to your Bag.
+                            </p>
+                        </div>
+                        <div class="havecartPanel">
+                            <form action="cart.html">
+                                <input type="button" value="close" title="remove button">     
+                                <ul class="have">
+                                    <li>
+                                        <figure>
+                                            <img src="images/main/have_img.png" alt="haveimg">
+                                            <figcaption>
+                                                <dl>
+                                                    <dt class="notowB12">A.P.C.</dt>
+                                                    <dd>Clement striped cotton-poplin shirt</dd>
+                                                </dl>
+                                                <dl class="notowL12">
+                                                    <dt>SIZE :</dt>
+                                                    <dd>XS</dd>
+                                                </dl>
+                                                <dl class="notowB16">
+                                                    <dt>Price :</dt>
+                                                    <dd>$195</dd>
+                                                </dl>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>
+                                <input type="submit" value="Go to shopping cart" title="submit button">
+                            </form>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="button" value="search" title="search button">
+                    </div>
+                </div>
+            </div>
+            <div class="searchPanel">
+                <input type="search" placeholder="Search" class="notowM12" title="search bar">
+                <input type="button" value="close" title="remove button">
+            </div>
+        </div>
+    </header>
+    <section class="aC1loyaltyContainer">
+        <h2 class="merwR30">My account</h2>
+        <aside class="userInfo">
+            <ul class="notowSB18"> 
+                <li>
+                    <button type="button">Profile</button>
+                    <ol class="notowR12" id="ProfileDepth">
+                        <li>
+                            <a href="acnt_profile.html">My details</a>
+                        </li>
+                        <li>
+                            <a href="acnt_profile_02.html">Address book</a>
+                        </li>
+                        <li>
+                            <a href="acnt_profile_03.html">Payment card</a>
+                        </li>
+                    </ol>    
+                </li>
+                <li>
+                    <a href="acnt_orderhistory.html">Order history</a>
+                </li>
+                <li>
+                    <a href="acnt_wishlist.html">Wishlist</a>
+                </li>
+                <li>
+                    <a href="acnt_loyalty.html" class="active">Loyalty</a>
+                </li>
+            </ul>
+        </aside>
+        <div>
+            <h3 class="merwR20">Loyalty</h3>
+            <div>
+                <mark class="merwK16">The curator</mark>
+                <mark class="merwR14">Welcome back Mr Park.</mark>
+            </div>
+            <div>
+                <div>
+                    <h4 class="notowSB18">MY LEVEL 01</h4>
+                    <strong class="merwR24">MY CURATOR POINTS</strong>
+                    <em class="notowL12">1 curator point = USD $10 spent</em>
+                    <span class="notowR16">100 Curator Points until Level 02</span>
+                    <ol class="merwR14">
+                        <li class="default">Lv.1</li>
+                        <li class="Bene2">Lv.2</li>
+                        <li class="Bene3">Lv.3</li>
+                        <li class="Bene4">Lv.4</li>
+                    </ol>
+                    <div id="Bene2Con">
+                        <span class="merwR20">
+                            Lv.2
+                            <small class="notowR12">Benefit</small>
+                        </span>
+                        <dl class="notowSB12">
+                            <dt>Three curated rewards</dt>
+                            <dd class="notowR12">
+                                Every year, we'll choose three rewards we think you'll love: from exclusive offers to experiences to save-the-date sale alerts.
+                            </dd>
+                            <dt>A birthday reward</dt>
+                            <dd class="notowR12">
+                                We'll send you a reward to enjoy for your birthday.
+                            </dd>
+                            <dt>Invitation to our Private Sale</dt>
+                            <dd class="notowR12">
+                                You'll get access to the sale during the private preview period.
+                            </dd>
+                            <dt>Exclusive offer days</dt>
+                            <dd class="notowR12">
+                                We'll reward you with two 10%-off days throughout the year.
+                            </dd>
+                        </dl>
+                    </div>
+                    <div id="Bene3Con">
+                        <span class="merwR20">
+                            Lv.3
+                            <small class="notowR12">Benefit</small>
+                        </span>
+                        <dl class="notowSB12">
+                            <dt>Four Curated Rewards</dt>
+                            <dd class="notowR12">
+                                Every year, we'll choose four rewards we think you'll love: from exclusive offers to experiences to save-the-date sale alerts.
+                            </dd>
+                            <dt>A birthday reward</dt>
+                            <dd class="notowR12">
+                                We'll send you a reward to enjoy for your birthday.
+                            </dd>
+                            <dt>Early access to our Private Sale</dt>
+                            <dd class="notowR12">
+                                You'll get access to our sale during the private preview period.
+                            </dd>
+                            <dt>Two Double-Points Orders, Chosen By You</dt>
+                            <dd class="notowR12">
+                                Reach your next level faster by choosing two orders on which you will earn double Curator Points.
+                            </dd>
+                            <dt>Exclusive offer days</dt>
+                            <dd class="notowR12">
+                                We'll reward you with two 15%-off days throughout the year.
+                            </dd>
+                        </dl>
+                    </div>
+                    <div id="Bene4Con">
+                        <span class="merwR20">
+                            Lv.4
+                            <small class="notowR12">Benefit</small>
+                        </span>
+                        <dl class="notowSB12">
+                            <dt>Five Curated Rewards</dt>
+                            <dd class="notowR12">
+                                Every year, we'll choose five rewards we think you'll love: from access to events or experiences to exclusive offers or a gift.
+                            </dd>
+                            <dt>A birthday reward</dt>
+                            <dd class="notowR12">
+                                We'll send you a reward to enjoy for your birthday.
+                            </dd>
+                            <dt>Priority invitation to our Private Sale</dt>
+                            <dd class="notowR12">
+                                You'll be among the first to shop the sale during the private preview period.
+                            </dd>
+                            <dt>Free delivery and returns</dt>
+                            <dd class="notowR12">
+                                Enjoy free delivery options on all orders, wherever you are in the world. Your benefit is automatically applied at the checkout.
+                            </dd>
+                            <dt>Exclusive offer days</dt>
+                            <dd class="notowR12">
+                                We'll reward you with two 15%-off days throughout the year.
+                            </dd>
+                            <dt>Priority Styling Consultations</dt>
+                            <dd class="notowR12">
+                                Enjoy priority consultations with our style experts via the channel of your choice.
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="notowSB18">MY BENEFITS</h4>
+                    <p class="merwR14">
+                        Your rewards are a suite of bespoke benefits which recognise your individual style. Rewards will be revealed over time, and as we get to know you, become increasingly tailored.
+                    </p>
+                    <ul class="accComponent">
+                        <li>
+                            <h3 class="notowR16">Two Curated Rewards</h3>
+                            <p class="merwR14">
+                                Every year, we'll choose two rewards we think you'll love: from exclusive offers to save-the-date sale alerts.<br>
+                                Don't miss out - make sure you're signed up to receive communications about The Curator.
+                            </p>
+                        </li>
+                        <li>
+                            <h3 class="notowR16">A birthday reward</h3>
+                            <p class="merwR14">
+                                We'll send you a reward to enjoy for your birthday.<br>
+                                We don't have your birthday - update it now.
+                            </p>
+                        </li>
+                        <li>
+                            <h3 class="notowR16">Two double-points orders, chosen by you</h3>
+                            <p class="merwR14">
+                                Reach your next level faster by choosing two orders on which you will earn double Curator Points.
+                            </p>
+                        </li>
+                        <li>
+                            <h3 class="notowR16">Exclusive offer days</h3>
+                            <p class="merwR14">
+                                We'll reward you with two 10%-off days throughout the year.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>      
+    </section>
+    <footer class="notowB12">
+        <div>
+            <strong class="notowSB18">WANT STYLE UPDATES?</strong>
+            <b class="notowR16">Email preferences</b>
+            <span class="gender">
+                <input type="email" id="usrAd">
+                <label for="usrAd" class="notowL12">Email Address</label>
+            </span>
+            <div class="notowR18" id="genderArea">
+                <form>
+                    <div>
+                        <input type="radio" id="typeMan" name="genderType" checked>
+                        <label for="typeMan">Man</label>
+                        <input type="radio" id="typeWoman" name="genderType">
+                        <label for="typeWoman">Non-Binary</label>
+                    </div>
+                    <input type="checkbox" id="infoNotice">
+                    <label for="infoNotice">
+                        Having read the Information notice, 
+                        I authorize Margiela S.a.s.u. to the 
+                        processing of my Personal Data for 
+                        Marketing purposes as described 
+                        in paragraph 3.1.b 
+                        of the information notice
+                    </label>
+                </form>
+            </div>
+        </div>
+        <div>
+            <span>MATCHES</span>
+            <ul class="notowBf12">
+                <li><a href="footer_about_us.html">ABOUT US</a></li>
+            </ul>
+        </div>
+        <div>
+            <span>HELP</span>
+            <ul class="notowBf12">
+                <li><a href="footer_faqs.html">FAQs</a></li>
+                <li><a href="footer_contact_us.html">CONTACT US</a></li>
+                <li><a href="footer_returns.html">RETURNS</a></li> 
+            </ul>
+        </div>
+        <div>
+            <span>LEGAL</span>
+            <ul class="notowBf12">
+                <li><a href="footer_terms_and_condition.html">TERMS AND CONDITIONS</a></li>
+                <li><a href="footer_privacy_policy.html">PRIVACY POLICY</a></li>
+                <li><a href="footer_cookie_policy.html">COOKIE POLICY</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="Left">
+                <span class="notowM12">Shipping to Korea Republic of</span>
+                <b class="notowR12">Customer Services</b>
+                <a href="https://web.whatsapp.com/" target="_blank" class="notowL12">t:0030 8321 0410 - toll free</a>
+                <a href="https://web.whatsapp.com/" target="_blank" class="notowL12">t:+44 (0)20 7022</a>
+            </div>
+            <ol class="sns fll">
+                <li><a href="https://www.facebook.com/flannels" target="_blank">meta</a></li>
+                <li><a href="https://www.instagram.com/flannels/" target="_blank">instagram</a></li>
+                <li><a href="https://uk.pinterest.com/flannels/" target="_blank">pinterest</a></li>
+                <li><a href="https://www.tiktok.com/@flannels" target="_blank">tiktok</a></li>
+                <li><a href="https://www.youtube.com/@flannels_fashion" target="_blank">youtube</a></li>
+            </ol>
+        </div>
+        <span class="notowSB12">© Copyright 2023 MATCHES</span>
+    </footer>
+</body>
+</html>

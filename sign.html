@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATCHES FASHION</title>
+    <link rel="shortcut icon" href="images/main/matches_fashion.svg" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/matches.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header class="anotherHeader">
+        <div class="fixHead fll">
+            <nav>
+                <button type="button" class="mui">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="notowM12n">
+                    <li>
+                        <span>CLOTHING</span>
+                        <ol class="notowR12n">
+                            <li><a href="sign.html">casual</a></li>
+                            <li><a href="sign.html">minimal</a></li>
+                            <li><a href="sign.html">street</a></li>
+                            <li><a href="sign.html">vintage</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span>SHOES</span>
+                        <ol class="notowR12n">
+                            <li><a href="sign.html">boots</a></li>
+                            <li><a href="sign.html">snekers</a></li>
+                            <li><a href="sign.html">workers</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span>BAGS</span>
+                        <ol class="notowR12n">
+                            <li><a href="sign.html">crossbag</a></li>
+                            <li><a href="sign.html">shoper bag</a></li>
+                            <li><a href="sign.html">shoulder bag</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span>ACCESSORIES</span>
+                        <ol class="notowR12n">
+                            <li><a href="sign.html">belt</a></li>
+                            <li><a href="sign.html">hats</a></li>
+                            <li><a href="sign.html">sunglasses</a></li>
+                            <li><a href="sign.html">wallet</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <h1>
+                <a href="index.html" class="merwR14">
+                    <strong class="merwK16">Matches Fashion</strong>
+                    Man
+                </a>
+            </h1>
+            <div>
+                <input type="button" value="mobBtn" title="mobile button">
+                <div class="notowM12n">
+                    <a href="sign.html">Sign In</a>
+                    <a href="sign.html">Wishlist</a>
+                    <div>
+                        <input type="button" value="cart" title="cart button">
+                        <div class="cartPanel">
+                            <input type="button" value="close" title="remove button">
+                            <p class="merwR20">
+                                You have not added 
+                                any items to your Bag.
+                            </p>
+                            <a href="sign.html">Log in</a>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="button" value="search" title="search button">
+                    </div>
+                </div>
+            </div>
+            <div class="searchPanel">
+                <input type="search" placeholder="Search" class="notowM12n" title="search bar">
+                <input type="button" value="close" title="remove button">
+            </div>
+        </div>
+    </header>
+    <div class="sucPopup">
+        <input type="button" value="close">
+        <img src="images/chk_page/success_ico_03.png" alt="successImg">
+        <strong class="merwB28">Success!</strong>
+        <p class="notowM18">
+            Your e-mail has been sent
+            to this email
+        </p>
+    </div>
+    <div class="resetPopup">
+        <input type="button" value="close">
+        <strong class="merwB24">RESET YOUR PASSWORD</strong>
+        <p class="notowM18">
+            Please enter your email address to reset your password. Instructions on how to proceed will be emailed to you.
+        </p>
+        <form class="nonAction">
+            <ul class="inputBox notowR16">
+                <li>
+                    <label for="userId" class="notowL12">Email address</label>
+                    <input type="email" id="userId" placeholder="Email address" required>
+                    <mark class="notowL12">Email address Is A Required Field</mark>
+                </li>
+            </ul>
+            <input type="submit" value="SUBMIT" class="notowB16" title="submit button">
+        </form>
+    </div>
+    <div class="signContainer">
+        <div class="signControl">
+            <div class="merwB24">
+                <input type="button" value="Sign up" data-tab="upSet" title="up button">
+                <input type="button" value="Sign in" class= "activated" data-tab="inSet" title="in button">
+            </div>
+            <div class="inSet active">
+                <form action="index_after.html">
+                    <fieldset>
+                        <ul class="notowR16 inputBox">
+                            <li>
+                                <label for="usrId" class="notowL12">Email address</label>
+                                <input type="email" id="usrId" placeholder="Email address" required>
+                                <mark class="notowL12">Email address Is A Required Field</mark>
+                            </li>
+                            <li>
+                                <label for="usrPs" class="notowL12">Password</label>
+                                <span class="chkVisib">visibility_off</span>
+                                <input type="password" id="usrPs" placeholder="Password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,16}$" required autocomplete="off">
+                                <div class="notowL12 erCon">
+                                    <mark>Please enter at least 8 characters.</mark>
+                                    <mark>Please enter at least one number.</mark>
+                                    <mark>Please enter one special character. (!+,-./:;'=>?@)</mark>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="notowR12">
+                            <input type="checkbox" id="saveId">
+                            <label for="saveId">Save login information</label>
+                            <input type="button" value="Find password" id="reset">
+                        </div>
+                        <input type="submit" value="Sign in" class="notowB16" title="signin button">
+                        <input type="button" value="Create a new account" class="notowB16" data-tab="upSet" title="create button">
+                    </fieldset>
+                </form>
+            </div>
+            <div class="upSet">
+                <form>
+                    <fieldset>
+                        <i class="notowR12">*All Required field</i>
+                        <ul class="notowR16 inputBox">
+                            <li>
+                                <label for="usrfName" class="notowL12">First name</label>
+                                <input type="text" id="usrfName" placeholder="First name" pattern="^[A-Za-z\s]{4}" required>
+                                <mark class="notowL12">Please write 4 letters</mark>
+                            </li>
+                            <li>
+                                <label for="usrlName" class="notowL12">Last name</label>
+                                <input type="text" id="usrlName" placeholder="Last name" pattern="^[A-Za-z\s]{7}" required>
+                                <mark class="notowL12">Please write 7 letters</mark>
+                            </li>
+                            <li>
+                                <label for="usrpNum" class="notowL12">Phone number</label>
+                                <input type="tel" id="usrpNum" placeholder="Phone number" data-only="Number" pattern="\d{3}\s\d{4}\s\d{4}" required>
+                                <mark class="notowL12">Please write 11 numbers</mark>
+                            </li>
+                            <li>
+                                <label for="useId" class="notowL12">Email address</label>
+                                <input type="email" id="useId" placeholder="Email address" required>
+                                <mark class="notowL12">Email address Is A Required Field</mark>
+                            </li>
+                            <li>
+                                <label for="usePs" class="notowL12">Password</label>
+                                <span class="chkVisib">visibility_off</span>
+                                <input type="password" id="usePs" placeholder="Password"  pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,16}$" required>
+                                <div class="notowL12 erCon">
+                                    <mark>Please enter at least 8 characters.</mark>
+                                    <mark>Please enter at least one number.</mark>
+                                    <mark>Please enter one special character. (!+,-./:;'=>?@)</mark>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="usrcPs" class="notowL12">Confirm password</label>
+                                <span class="chkVisib">visibility_off</span>
+                                <input type="password" id="usrcPs" placeholder="Confirm password" required>
+                                <mark class="notowL12">The password is incorrect!</mark>
+                            </li>
+                        </ul>
+                        <input type="submit" value="Sign up" class="notowB16" title="signup button">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <img src="images/sign_page/Sign_in_ban.png" alt="signinbanner">
+    </div>
+    <footer class="notowB12n">
+        <div>
+            <strong class="notowSB18">WANT STYLE UPDATES?</strong>
+            <b class="notowR16">Email preferences</b>
+            <span class="gender">
+                <input type="email" id="usrAd">
+                <label for="usrAd" class="notowL12">Email Address</label>
+            </span>
+            <div class="notowR18" id="genderArea">
+                <form>
+                    <div>
+                        <input type="radio" id="typeMan" name="genderType" checked>
+                        <label for="typeMan">Man</label>
+                        <input type="radio" id="typeWoman" name="genderType">
+                        <label for="typeWoman">Non-Binary</label>
+                    </div>
+                    <input type="checkbox" id="infoNotice">
+                    <label for="infoNotice">
+                        Having read the Information notice, 
+                        I authorize Margiela S.a.s.u. to the 
+                        processing of my Personal Data for 
+                        Marketing purposes as described 
+                        in paragraph 3.1.b 
+                        of the information notice
+                    </label>
+                </form>
+            </div>
+        </div>
+        <div>
+            <span>MATCHES</span>
+            <ul>
+                <li><a href="sign.html">ABOUT US</a></li>
+            </ul>
+        </div>
+        <div>
+            <span>HELP</span>
+            <ul>
+                <li><a href="sign.html">FAQs</a></li>
+                <li><a href="sign.html">CONTACT US</a></li>
+                <li><a href="sign.html">RETURNS</a></li> 
+            </ul>
+        </div>
+        <div>
+            <span>LEGAL</span>
+            <ul>
+                <li><a href="sign.html">TERMS AND CONDITIONS</a></li>
+                <li><a href="sign.html">PRIVACY POLICY</a></li>
+                <li><a href="sign.html">COOKIE POLICY</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="Left">
+                <span class="notowM12">Shipping to Korea Republic of</span>
+                <b class="notowR12">Customer Services</b>
+                <a href="https://web.whatsapp.com/" target="_blank" class="notowL12">t:0030 8321 0410 - toll free</a>
+                <a href="https://web.whatsapp.com/" target="_blank" class="notowL12">t:+44 (0)20 7022</a>
+            </div>
+            <ol class="sns fll">
+                <li><a href="https://www.facebook.com/flannels" target="_blank">meta</a></li>
+                <li><a href="https://www.instagram.com/flannels/" target="_blank">instagram</a></li>
+                <li><a href="https://uk.pinterest.com/flannels/" target="_blank">pinterest</a></li>
+                <li><a href="https://www.tiktok.com/@flannels" target="_blank">tiktok</a></li>
+                <li><a href="https://www.youtube.com/@flannels_fashion" target="_blank">youtube</a></li>
+            </ol>
+        </div>
+        <span class="notowSB12">© Copyright 2023 MATCHES</span>
+    </footer>
+</body>
+</html>

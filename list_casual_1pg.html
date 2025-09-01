@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATCHES FASHION</title>
+    <link rel="shortcut icon" href="images/main/matches_fashion.svg" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/matches.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div class="fixHead fll">
+            <nav class="notowM12n">
+                <button type="button" class="mui">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li>
+                        <span>CLOTHING</span>
+                        <ol class="notowR12n">
+                            <li><a href="list_casual_1pg.html">casual</a></li>
+                            <li><a href="list_minimal_1pg.html">minimal</a></li>
+                            <li><a href="list_street_1pg.html">street</a></li>
+                            <li><a href="list_vintage_1pg.html">vintage</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span>SHOES</span>
+                        <ol class="notowR12n">
+                            <li><a href="list_boots.html">boots</a></li>
+                            <li><a href="list_snekers.html">snekers</a></li>
+                            <li><a href="list_workers.html">workers</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span>BAGS</span>
+                        <ol class="notowR12n">
+                            <li><a href="list_cross_bag.html">crossbag</a></li>
+                            <li><a href="list_shoper_bag.html">shoper bag</a></li>
+                            <li><a href="list_shoulder_bag.html">shoulder bag</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span>ACCESSORIES</span>
+                        <ol class="notowR12n">
+                            <li><a href="list_belt.html">belt</a></li>
+                            <li><a href="list_hats.html">hats</a></li>
+                            <li><a href="list_sunglasses.html">sunglasses</a></li>
+                            <li><a href="list_wallet.html">wallet</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <h1>
+                <a href="index_after.html" class="merwR14">
+                    <strong class="merwK16">Matches Fashion</strong>
+                    Man
+                </a>
+            </h1>
+            <div>
+                <input type="button" value="mobBtn" title="mobile button">
+                <div class="notowM12n">
+                    <div>
+                        <input type="button" value="account" title="account button">
+                        <div class="accountPanel">
+                            <ol>
+                                <li><a href="acnt_profile.html">profile</a></li>
+                                <li><a href="acnt_loyalty.html">Loyalty</a></li>
+                                <li><a href="acnt_orderhistory.html">Order</a></li>
+                                <li><a href="index.html">Log out</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <a href="acnt_wishlist.html">Wishlist</a>
+                    <div>
+                        <input type="button" value="cart" title="cart button">
+                        <div class="cartPanel">
+                            <input type="button" value="close" title="remove button">
+                            <p class="merwR20">
+                                You have not added 
+                                any items to your Bag.
+                            </p>
+                        </div>
+                        <div class="havecartPanel">
+                            <form action="cart.html">
+                                <input type="button" value="close" title="remove button">     
+                                <ul class="have">
+                                    <li>
+                                        <figure>
+                                            <img src="images/main/have_img.png" alt="haveimg">
+                                            <figcaption>
+                                                <dl>
+                                                    <dt class="notowB12">A.P.C.</dt>
+                                                    <dd>Clement striped cotton-poplin shirt</dd>
+                                                </dl>
+                                                <dl class="notowL12">
+                                                    <dt>SIZE :</dt>
+                                                    <dd>XS</dd>
+                                                </dl>
+                                                <dl class="notowB16">
+                                                    <dt>Price :</dt>
+                                                    <dd>$195</dd>
+                                                </dl>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>
+                                <input type="submit" value="Go to shopping cart" title="submit button">
+                            </form>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="button" value="search" title="search button">
+                    </div>
+                </div>
+            </div>
+            <div class="searchPanel">
+                <input type="search" placeholder="Search" class="notowM12" title="search bar">
+                <input type="button" value="close" title="remove button">
+            </div>
+        </div>
+    </header>
+    <section class="listContainer">
+        <h2 class="merwB30">CLOTHING</h2>
+        <ol class="merwR22">
+            <li><a href="list_casual_1pg.html" class="active">casual</a></li>
+            <li><a href="list_minimal_1pg.html">minimal</a></li>
+            <li><a href="list_street_1pg.html">street</a></li>
+            <li><a href="list_vintage_1pg.html">vintage</a></li>
+        </ol>
+        <div>
+            <button type="button" class="notowSB20n">apply detailed filters</button>
+            <aside id="applyPanel">
+                <form>
+                    <ul>
+                        <li class="notowSB18">
+                            <button type="button">
+                                SORT BY
+                                <mark></mark>
+                            </button>
+                            <ol class="notowB16">
+                                <li><input type="button" value="Newest" title="object select1"></li>
+                                <li><input type="button" value="Price" title="object select2"></li>
+                            </ol>
+                        </li>
+                        <li class="notowSB18">
+                            <button type="button">
+                                CATEGORY
+                                <mark></mark>
+                            </button>
+                            <ol class="notowB16">
+                                <li><input type="button" value="Top" title="object select3"></li>
+                                <li><input type="button" value="Bottom" title="object select4"></li>
+                            </ol>
+                        </li>
+                        <li class="notowSB18">
+                            <button type="button">
+                                SIZE
+                                <mark></mark>
+                            </button>
+                            <ol>
+                                <li class="notowB16">
+                                    <input type="button" value="XS" title="object select size">
+                                    <input type="button" value="S" title="object select size">
+                                    <input type="button" value="M" title="object select size">
+                                    <input type="button" value="L" title="object select size">
+                                    <input type="button" value="XL" title="object select size">
+                                </li>
+                                <li class="notowB16">
+                                    <input type="button" value="37" title="object select shoes">
+                                    <input type="button" value="38" title="object select shoes">
+                                    <input type="button" value="39" title="object select shoes">
+                                    <input type="button" value="40" title="object select shoes">
+                                    <input type="button" value="41" title="object select shoes">
+                                </li>
+                                <li class="notowB16">
+                                    <input type="button" value="42" title="object select shoes">
+                                    <input type="button" value="43" title="object select shoes">
+                                    <input type="button" value="44" title="object select shoes">
+                                    <input type="button" value="45" title="object select shoes">
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <input type="submit" value="View results" class="notowB20" title="object result">
+                    <input type="reset" value="Reset" class="notowB20" title="object reset">
+                </form>
+            </aside>
+        </div>
+        <ul class="fllL even3">
+            <li>
+                <a href="detail_casual_01.html"><img src="images/list_casual/example_ca_01.png" alt="listproduct1"></a>  
+                <dl>
+                    <dt class="merwR16">Clement striped cotton-poplin shirt</dt>
+                    <dd class="merwB16">$195</dd>
+                </dl>
+            </li>
+            <li>
+                <a href="detail_casual_02.html"><img src="images/list_casual/example_ca_02.png" alt="listproduct2"></a>
+                <dl>
+                    <dt class="merwR16">Edouard cotton-chambray shirt</dt>
+                    <dd class="merwB16">$184</dd>
+                </dl>
+            </li>
+            <li>
+                <a href="detail_casual_03.html"><img src="images/list_casual/example_ca_03.png" alt="listproduct3"></a>
+                <dl>
+                    <dt class="merwR16">Martin straight-leg jeans</dt>
+                    <dd class="merwB16">$221</dd>
+                </dl>
+            </li>
+            <li>
+                <a href="detail_casual_04.html"><img src="images/list_casual/example_ca_04.png" alt="listproduct4"></a>
+                <dl>
+                    <dt class="merwR16">Karty denim shirt</dt>
+                    <dd class="merwB16">$298</dd>
+                </dl>
+            </li>
+            <li>
+                <a href="detail_casual_05.html"><img src="images/list_casual/example_ca_05.png" alt="listproduct5"></a>
+                <dl>
+                    <dt class="merwR16">Shawl-neck alpaca-blend sweater</dt>
+                    <dd class="merwB16">$1,766</dd>
+                </dl>
+            </li>
+            <li>
+                <a href="detail_casual_06.html"><img src="images/list_casual/example_ca_06.png" alt="listproduct6"></a>
+                <dl>
+                    <dt class="merwR16">Interlocking G crystal-embellished denim jacket</dt>
+                    <dd class="merwB16">$5,088</dd>
+                </dl>
+            </li>
+            <li>
+                <a href="detail_casual_07.html"><img src="images/list_casual/example_ca_07.png" alt="listproduct7"></a>
+                <dl>
+                    <dt class="merwR16">Monumentale wide-leg jeans</dt>
+                    <dd class="merwB16">$1,228</dd>
+                </dl>
+            </li>
+            <li>
+                <a href="detail_casual_08.html"><img src="images/list_casual/example_ca_08.png" alt="listproduct8"></a>
+                <dl>
+                    <dt class="merwR16">Belted curved-leg jeans</dt>
+                    <dd class="merwB16">$834</dd>
+                </dl>
+            </li>
+            <li>
+                <a href="detail_casual_09.html"><img src="images/list_casual/example_ca_09.png" alt="listproduct9"></a>
+                <dl>
+                    <dt class="merwR16">Pixelated wide-leg jeans</dt>
+                    <dd class="merwB16">$924</dd>
+                </dl>
+            </li>
+            <li>
+                <a href="detail_casual_10.html"><img src="images/list_casual/example_ca_10.png" alt="listproduct10"></a>
+                <dl>
+                    <dt class="merwR16">Anagram-embroidered cotton jersey T-shirt</dt>
+                    <dd class="merwB16">$343</dd>
+                </dl>
+            </li>
+            <li>
+                <a href="detail_casual_11.html"><img src="images/list_casual/example_ca_11.png" alt="listproduct11"></a>
+                <dl>
+                    <dt class="merwR16">Chillax Fox-patch cotton-jersey sweatshirt</dt>
+                    <dd class="merwB16">$179</dd>
+                </dl>
+            </li>
+            <li>
+                <a href="detail_casual_12.html"><img src="images/list_casual/example_ca_12.png" alt="listproduct12"></a>
+                <dl>
+                    <dt class="merwR16">Double Fox Head-patch cotton-jersey T-shirt</dt>
+                    <dd class="merwB16">$89</dd>
+                </dl>
+            </li>
+            <li>
+                <a href="detail_casual_13.html"><img src="images/list_casual/example_ca_13.png" alt="listproduct13"></a>
+                <dl>
+                    <dt class="merwR16">Haven felted jacket</dt>
+                    <dd class="merwB16">$496</dd>
+                </dl>
+            </li>
+            <li>
+                <a href="detail_casual_14.html"><img src="images/list_casual/example_ca_14.png" alt="listproduct14"></a>
+                <dl>
+                    <dt class="merwR16">Mount cotton cargo trousers</dt>
+                    <dd class="merwB16">$449</dd>
+                </dl>
+            </li>
+            <li>
+                <a href="detail_casual_15.html"><img src="images/list_casual/example_ca_15.png" alt="listproduct15"></a>
+                <dl>
+                    <dt class="merwR16">Teddy wool-blend bomber jacket</dt>
+                    <dd class="merwB16">$3,231</dd>
+                </dl>
+            </li>
+            <li>
+                <a href="detail_casual_16.html"><img src="images/list_casual/example_ca_16.png" alt="listproduct16"></a>
+                <dl>
+                    <dt class="merwR16">Cappe high-neck cotton-canvas bomber jacket</dt>
+                    <dd class="merwB16">$605</dd>
+                </dl>
+            </li>
+        </ul>
+        <div class="pager">
+            <a href="list_casual_1pg.html">&lt;</a>
+            <a href="list_casual_2pg.html">&gt;</a>
+            <ol class="notowM26">
+                <li><a href="list_casual_1pg.html" class="active">1</a></li>
+                <li><a href="list_casual_2pg.html">2</a></li>
+                <li><a href="list_casual_3pg.html">3</a></li>
+            </ol>
+        </div>
+    </section>
+    <footer class="notowB12">
+        <div>
+            <strong class="notowSB18">WANT STYLE UPDATES?</strong>
+            <b class="notowR16">Email preferences</b>
+            <span class="gender">
+                <input type="email" id="usrAd">
+                <label for="usrAd" class="notowL12">Email Address</label>
+            </span>
+            <div class="notowR18" id="genderArea">
+                <form>
+                    <div>
+                        <input type="radio" id="typeMan" name="genderType" checked>
+                        <label for="typeMan">Man</label>
+                        <input type="radio" id="typeWoman" name="genderType">
+                        <label for="typeWoman">Non-Binary</label>
+                    </div>
+                    <input type="checkbox" id="infoNotice">
+                    <label for="infoNotice">
+                        Having read the Information notice, 
+                        I authorize Margiela S.a.s.u. to the 
+                        processing of my Personal Data for 
+                        Marketing purposes as described 
+                        in paragraph 3.1.b 
+                        of the information notice
+                    </label>
+                </form>
+            </div>
+        </div>
+        <div>
+            <span>MATCHES</span>
+            <ul class="notowBf12">
+                <li><a href="footer_about_us.html">ABOUT US</a></li>
+            </ul>
+        </div>
+        <div>
+            <span>HELP</span>
+            <ul class="notowBf12">
+                <li><a href="footer_faqs.html">FAQs</a></li>
+                <li><a href="footer_contact_us.html">CONTACT US</a></li>
+                <li><a href="footer_returns.html">RETURNS</a></li> 
+            </ul>
+        </div>
+        <div>
+            <span>LEGAL</span>
+            <ul class="notowBf12">
+                <li><a href="footer_terms_and_condition.html">TERMS AND CONDITIONS</a></li>
+                <li><a href="footer_privacy_policy.html">PRIVACY POLICY</a></li>
+                <li><a href="footer_cookie_policy.html">COOKIE POLICY</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="Left">
+                <span class="notowM12">Shipping to Korea Republic of</span>
+                <b class="notowR12">Customer Services</b>
+                <a href="https://web.whatsapp.com/" target="_blank" class="notowL12">t:0030 8321 0410 - toll free</a>
+                <a href="https://web.whatsapp.com/" target="_blank" class="notowL12">t:+44 (0)20 7022</a>
+            </div>
+            <ol class="sns fll">
+                <li><a href="https://www.facebook.com/flannels" target="_blank">meta</a></li>
+                <li><a href="https://www.instagram.com/flannels/" target="_blank">instagram</a></li>
+                <li><a href="https://uk.pinterest.com/flannels/" target="_blank">pinterest</a></li>
+                <li><a href="https://www.tiktok.com/@flannels" target="_blank">tiktok</a></li>
+                <li><a href="https://www.youtube.com/@flannels_fashion" target="_blank">youtube</a></li>
+            </ol>
+        </div>
+        <span class="notowSB12">© Copyright 2023 MATCHES</span>
+    </footer>
+</body>
+</html>

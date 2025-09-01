@@ -1,0 +1,426 @@
+body{background-color: var(--gs02);}
+
+header nav a,header nav ul li > *,
+.fixHead > div a[href='acnt_wishlist.html'],.anotherHeader > div a[href='sign.html'],
+:where(.fixHead > div,.searchPanel) input,[class*='Panel'],
+footer > div:not(:nth-of-type(1),:nth-of-type(5)) > *,.Left a{border-radius: var(--bdr14);}
+
+header nav ul li span,.fixHead > div a[href='acnt_wishlist.html'],
+:where(header nav ol li,.anotherHeader .fixHead > div:not(.searchPanel) > div,footer > div:not(:nth-of-type(1),:nth-of-type(5)):hover span+ul li,.Left) > a,
+.fixHead > div > div input[type='button'],footer > div:not(:nth-of-type(1),:nth-of-type(5)) span,
+.gender input{transition: all 0.3s ease 0s;}
+
+i,a,span,cite,em,img,body > *:not(.aC2cartContainer) strong,
+:is(.addList > div,.footer1faqContainer .accComponent,[class*="Popup"],.editCon).active,
+:is([class$='Container']:not(:has(.paymentContent),.detailContainer),.paymentContent figure) b,
+[class^='list'] > div > button:after,.footeraboContainer blockquote:before,
+footer > div:first-of-type > *:not(span,div),
+.inputBox li:has(input:user-invalid) [class$='Con'],
+.inputBox [class$='Con'] mark{display: block;}
+
+.inputBox [class$='Con'] mark:before,.have figcaption dl:not(:first-child) *,#genderArea input,
+footer > div:not(:nth-of-type(1),:nth-of-type(5)) span:after{display: inline-block; margin: 0;}
+
+mark,i,address,cite,em{font-style: normal;}
+
+mark,button,input{background-color: transparent;}
+button,input[type='checkbox']{padding: 0; margin: 0;}
+button,.selectComponent select{border: none;}
+span,a{text-decoration: none;}
+input{border-style: none; outline: none;}
+
+[class^='list'] > ol li a,[class^='list'] > div > button,.fixHead nav ul li ol li a{text-transform: uppercase;}
+.fllL li img{border-radius: var(--bdr40);}
+
+.addList > div,.editCon,header nav ul li ol,
+footer > div:first-of-type > div,
+footer div ul,.inputBox [class$='Con']:not(.newCon),[class*="Popup"]{display: none;}
+
+#applyPanel input[type='button'],button,.detailContainer select,
+:where(.signControl > div:first-of-type,.inputBox li,.detailContainer aside > div,header) input,
+:where(.resultCon li,.infoList > li,.paymentContent li:nth-child(2)) figure figcaption dl b,
+.resultCon li:first-child strong,option,footer label,
+.paymentContent > li:last-child p{font: inherit;}
+
+:is(.inputBox li,.gender) input{border: 2px solid var(--gs03);}
+
+.inputBox [class$='Con']{margin-top: var(--sp10);}
+.inputBox [class$='Con'] mark{color: var(--gs08); font-size: 12px; font-weight: inherit; line-height: 12px;}
+.inputBox [class$='Con'] mark:not(:last-child){margin-bottom: 10px;}
+:is(.inputBox [class$='Con'] mark,.footer1conContainer > ul > li ul li):before{
+    content: ''; border-radius: 6px; border: 1px solid var(--gs05);
+    width: 10px; height: 10px; margin-right: 10px;
+}
+.inputBox [class$='Con'] mark:before{vertical-align: middle;}
+
+.inputBox li{position: relative;}
+.inputBox li input{width: 100%; padding: var(--sp20); border-radius: var(--bdr10); color: var(--gs05); box-sizing: border-box;}
+.inputBox li label{
+    color: var(--gs01); background-color: var(--bs02); padding: 5px; border-radius: 4.5px;
+    position: absolute; top: 15px; left: 20px; transition: top 0.5s ease 0s;
+}
+.inputBox li.styleOn input{color: var(--gs10);}
+:is(.inputBox li.styleOn,.inputBox li:has(input:user-invalid:focus),.inputBox li:has(input:focus)) label{top: -13px;}
+.inputBox li.styleOn label{background-color: var(--gs03);}
+.inputBox li:has(input:user-invalid:focus) label{background-color: var(--rs02);}
+.inputBox li:has(input:focus) label{background-color: var(--bs02);}
+:is(.inputBox li,.gender) input:focus{border-color: var(--bs02); background-color: var(--gs01);}
+.inputBox li input:user-invalid:focus,.inputBox li input:user-invalid{border-color: var(--rs02);}
+.inputBox li > mark{text-align: right; position: absolute; right: 0; top: 100%; color: var(--rs02);}
+.saveComplete{color: var(--bs01); position: absolute; bottom: 0; left: 0; opacity: 0;}
+.gender input:focus+label{color: var(--bs02);}
+.inputBox li > :is(label,mark),[class*='Panel']{opacity: 0;}
+
+:is(.inputBox li:has(input:user-invalid:focus),.inputBox li:has(input:focus),.inputBox li.styleOn) label,
+.inputBox li:has(input:user-invalid) mark,.saveComplete.active{opacity: 1;}
+
+.bx-wrapper{
+    box-shadow: none; background: transparent; border: none;
+}
+.detailContainer .bx-wrapper .bx-controls-direction a{
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 42px;
+    height: 42px;
+    color: transparent;
+    z-index: 1;
+    background: url('../images/btn/detSlidControl_sim.png') center / contain no-repeat;
+}
+.detailContainer .bx-prev{left: 2.3%; transform: rotate(-180deg);}
+.detailContainer .bx-next{right: 2.3%;}
+.indexContainer > div:last-of-type .bx-wrapper .bx-pager{
+    bottom: 50px;
+    padding-top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 3px;
+}
+.indexContainer > div:last-of-type .bx-wrapper .bx-pager .bx-pager-item{width: 50%; top: 0; position: absolute;}
+.indexContainer > div:last-of-type .bx-wrapper .bx-pager .bx-pager-item:first-of-type{left: 0;}
+.indexContainer > div:last-of-type .bx-wrapper .bx-pager .bx-pager-item:last-of-type{left: 50%;}
+.indexContainer > div:last-of-type .bx-wrapper .bx-pager .bx-pager-item:first-of-type a{border-radius: 3px 0 0 3px;}
+.indexContainer > div:last-of-type .bx-wrapper .bx-pager .bx-pager-item:last-of-type a{border-radius: 0 3px 3px 0;}
+.indexContainer .bx-wrapper .bx-pager .bx-pager-item a{background-image: none; width: 0; height: 5px; margin: 0;}
+.indexContainer > div:last-of-type .bx-wrapper .bx-pager .bx-pager-item a.active{transition: width 1.8s ease-in-out; background-color: #fff; width: 100%;}
+.indexContainer .bx-wrapper{margin: 0;}
+
+:where(.fllL,.indexContainer ul:not(.autoSlider),.thumbPager) li img{width: 100%;}
+
+header{position: fixed; width: 100%; top: 0; z-index: 20;}
+
+.scroll{background-color: var(--gs01); border-radius: 0 0 14px 14px;}
+
+.fixHead{padding-top: var(--sp35) !important; box-sizing: border-box; position: relative; padding-bottom: var(--sp35) !important;}
+
+.detailContainer aside > div:not(#details):after,
+:is(.indexContainer ul,.editCon form > div,[class*='fll']):after,
+:is(.aC1paymentContainer .infoList,.paymentContent,.have) > li figure:after{content: ''; display: block; clear: both;}
+
+:where(.paymentContent,.infoList,.have) > li figure > *,
+.detailContainer aside > div:not(#details) > *,
+[class*='fll'] > *:not(.searchPanel){float: left;}
+
+.fixHead > div:not(.searchPanel) > div > div:not(:nth-of-type(3)),
+.fixHead > div a[href="acnt_wishlist.html"],[class^='list'] > div,
+.gender,.nonAction div:has(.saveComplete){position: relative;}
+
+.footer1faqContainer ul:first-of-type,#applyPanel ul > li:last-child ol li{display: flex; justify-content: space-between; flex-wrap: wrap;}
+.tabButton,.pager ol,.emptyContainer div{display: flex; justify-content: center;}
+
+:is(.selectComponent,.accComponent li h3):after{content: ''; position: absolute; top: 50%; transform: translateY(-50%); background-size: contain;}
+:is(.selectComponent,.accComponent li h3):after,input[value='bookmark'],[class$='Visib'],.sns li a,
+.payIco li,[class^='footer1'],.footer1faqContainer ul:first-of-type li button:before{
+    background-position: center; background-repeat: no-repeat;
+}
+
+.fixHead h1 *{color: var(--gs10); line-height: 20px;}
+.fixHead > div:not(.searchPanel){display: flex; justify-content: right;}
+.fixHead h1{text-align: center;}
+
+[class*='Panel']{position: absolute; transition: all 0.4s ease-in-out 0s;}
+[class*='Panel']:not(.searchPanel){background-color: var(--gs02); box-shadow: 0px 3px 7px var(--gs10);}
+
+.accountPanel{width: 105px;}
+.accountPanel ol li a{background-size: 17px; background-position: 10px center; background-repeat: no-repeat; padding: 5px var(--sp30); color: var(--gs10);}
+.accountPanel ol li:nth-child(1) a{background-image: url('../images/main/account_box_FILL0_wght400_GRAD0_opsz24.svg'); border-radius: 14px 14px 0 0;}
+.accountPanel ol li:nth-child(2) a{background-image: url('../images/main/sim_loyalty.png');}
+.accountPanel ol li:nth-child(3) a{background-image: url('../images/main/sim_order.png'); border-bottom: 1px solid var(--gs03);}
+.accountPanel ol li:nth-child(4) a{background-image: url('../images/main/logout_FILL0_wght400_GRAD0_opsz24.svg'); border-radius: 0 0 14px 14px;}
+
+.cartPanel{width: 270px; padding: 80px 25px 135px; box-sizing: border-box; text-align: center;}
+.anotherHeader .cartPanel{padding-bottom: var(--sp15);}
+.anotherHeader .cartPanel p{margin-bottom: var(--sp90);}
+.anotherHeader .cartPanel a{padding: var(--sp10) var(--sp15); border-radius: 10px; background-color: var(--gs10); color: var(--gs01);}
+
+.have{margin-bottom: 60px; padding-bottom: var(--sp20); border-bottom: 2px solid var(--gs10);}
+
+.have figcaption{width: 50%; margin-left: var(--sp10);}
+.have figcaption dl:first-child dt{height: 25px; line-height: 10px;}
+.have figcaption dl:first-child dd{height: 50px;}
+.have figcaption dl:first-child *,.have figcaption dl:nth-child(2){margin-bottom: 10px;}
+.havecartPanel{width: 300px; padding: 10px 10px 20px; box-sizing: border-box;}
+.havecartPanel input[type='submit']{width: 280px; background-color: var(--gs10); color: var(--gs01); padding: 10px 0;}
+
+.searchPanel,.payIco,
+:where(footer > div ul li,.Left,.emptyContainer div) a{padding: var(--sp10); box-sizing: border-box;}
+.searchPanel{top: -100%; background-color: var(--gs03);}
+.searchPanel input[type='search']{
+    background: url('../images/main/sim_search_reverse.png') 10px center / 15px no-repeat;
+    padding: var(--sp10) var(--sp10) var(--sp10) var(--sp35); box-sizing: border-box;
+    color: var(--gs05); width: 100%;
+    border: 2px solid transparent; transition: 0.3s;
+}
+.searchPanel input[type='search']:focus{border-color: var(--bs02);}
+
+[class*='Panel'].searchmove{top: 80%;}
+[class$="move"]{opacity: 1; z-index: 1;}
+[class*='Panel'].scrollsearchmove{top: 100%;}
+
+.wishcaption:after{content: ''; position: absolute; width: 5px; height: 5px; background: url('../images/detail_icon/wish_sim_ball.png') center / 5px no-repeat;}
+
+footer > div:first-of-type{margin-bottom: var(--sp120); width: 100%;}
+footer > div:first-of-type strong{margin-bottom: var(--sp35);}
+footer > div:first-of-type b{margin-bottom: var(--sp30);}
+
+.gender input{width: 100%; padding: var(--sp15) var(--sp20); border-radius: var(--bdr10); box-sizing: border-box;}
+.gender label{color: var(--gs04); background-color: var(--gs02); position: absolute; top: -10px; left: 25px; transition: top 0.3s ease-in 0s;}
+
+footer #genderArea{margin-top: var(--sp30) !important;}
+footer #genderArea label{margin-left: var(--sp10);}
+footer #genderArea div input:nth-of-type(2){margin-left: calc(20% - 16px);}
+footer #genderArea div label{line-height: 25px; vertical-align: middle;}
+footer #genderArea div{margin-bottom: var(--sp30);}
+footer #genderArea input{width: 20px; height: 20px;}
+footer #genderArea form > label{width: 85%;}
+footer > div:not(:nth-of-type(1),:nth-of-type(5)) span:after{
+    content: url('../images/main/expand_more_FILL0_wght400_GRAD0_opsz24_18.png');
+    margin-left: 13px; transform-origin: center; transition: all ease-in 0.3s;
+}
+*.rotate span:after{transform: rotate(-180deg);}
+
+footer > div:not(:nth-of-type(1),:nth-of-type(5)) ul li a{display:inline-block; color: var(--gs10);}
+footer > div:nth-of-type(5){margin-bottom: var(--sp70);}
+.Left span{margin-bottom: var(--sp20);}
+.Left b{display: block; margin-bottom: var(--sp10);}
+.Left a:last-child{width: 130px; background-position: 90% center; background-size: 12px; background-repeat: no-repeat;}
+
+.sns li a{background-size: contain; text-indent: -9999px;}
+.sns li:nth-child(1) a{background-image: url('../images/main/fb-logos-RGB-Black-1024.svg');}
+.sns li:nth-child(2) a{background-image: url('../images/main/insta-logos-RGB-Black-1024.svg');}
+.sns li:nth-child(3) a{background-image: url('../images/main/pt-logos-RGB-Black-1024.svg');}
+.sns li:nth-child(4) a{background-image: url('../images/main/tik-tok-flat-icon.svg');}
+.sns li:nth-child(5) a{background-image: url('../images/main/yt-icon-mono-light.svg');}
+.sns li:not(:first-child){margin-left: var(--sp20);}
+footer > span{width: 100%; text-align: center;}
+footer{margin-bottom: var(--sp20) !important;}
+
+@media screen and (max-width: 1279px){
+    .indexContainer .bx-wrapper:has(.autoSlider) .bx-pager{width: 77%;}
+
+    .fixHead nav button.rotate span,.fixHead nav ul{position: absolute;}
+    .fixHead nav button{width: 40px; height: 35px; padding: 0 var(--sp10); position: relative;}
+    .fixHead nav button.rotate{background-color: var(--gs04); border-radius: var(--sp10) var(--sp10) 0 0;}
+    .fixHead nav button.rotate span{left: 10px; top: 50%; transform: rotateY('-50%'); transform-origin: center;}
+    .fixHead nav button.rotate span:first-child{transform: rotate(45deg);}
+    .fixHead nav button.rotate span:nth-child(2){transform: rotate(-395deg); opacity: 0;}
+    .fixHead nav button.rotate span:last-child{transform: rotate(315deg);}
+    .fixHead nav button,.fixHead > div input[type='button'],.fixHead > div > div > a{text-indent: -9999px;}
+    .fixHead nav button span{width: 20px; background-color: var(--gs10); height: 2px; margin-bottom: 3px; transition: all 0.3s ease-in-out 0s;}
+    
+    .fixHead nav ul{
+        top: 68px; width: 260px; border-radius: 0 var(--bdr20) var(--bdr20) 0; padding-left: var(--sp35); padding-right: var(--sp35);
+        left: -0.5%; z-index: 5; background-color: var(--gs04); box-sizing: border-box;
+        max-height: 0; overflow: hidden; transition: all 0.4s ease-in-out;
+    }
+    .fixHead nav button.rotate+ul{max-height: 800px; padding-bottom: var(--sp35); padding-top: var(--sp35);}
+    .fixHead nav ul > li:not(:last-child){margin-bottom: var(--sp35);}
+    .fixHead nav ul li span:after{
+        content: url('../images/main/nav_menu_sim.png');
+        display: block; float: right; transform-origin: center;
+        transition: all ease-in 0.3s;
+    }
+
+    .fixHead nav ul li ol{margin-top: var(--sp25);}
+    .fixHead nav ul li ol li:not(:last-child){margin-bottom: var(--sp20);}
+    .fixHead nav ul li ol li a{color: var(--gs06);}
+
+    .fixHead > div:not(.searchPanel) input:not([type='submit'],[value='close'],[value='cart']),.fixHead > div:not(.searchPanel) > div > a{width: 35px;}
+    .fixHead > div:not(.searchPanel) input:not([type='submit'],[value='close']),.fixHead > div:not(.searchPanel) > div > a{height: 35px;}
+
+    .fixHead > div > div input[value="account"]{background-image: url('../images/main/account_ico_tablet.png');}
+    .anotherHeader .fixHead > div > div > a:first-of-type{background-image: url('../images/main/account_ico_before_tablet.svg');}
+    .fixHead > div a[href='acnt_wishlist.html'],.anotherHeader .fixHead > div > div > a:last-of-type{background: url('../images/main/wishlist_ico_tablet.png') center / 12px no-repeat; background-color: var(--gs04);}
+    .fixHead > div:not(.searchPanel) > div input[value='cart'],.anotherHeader .fixHead > div > div:first-of-type > input[type='button']{background-image: url('../images/main/mf-icn-cart.svg');}
+    .fixHead > div > div input[value="search"]{background-image: url('../images/main/mf-icn-search.svg');}
+
+    .fixHead > div:not(.searchPanel) input:not([type='submit'],[value='close'],[value='mobBtn']),.anotherHeader .fixHead > div:not(.searchPanel) > div > a:first-of-type{background-size: 15px; background-repeat: no-repeat; background-position: center; background-color: var(--gs04);}
+
+    .wishcaption:after{top: 6px; right: 7px;}
+    
+    /* ? header Fin */
+
+}
+/* ? mobile~tablet */
+
+@media screen and (max-width: 767px){
+
+    .fixHead{padding: 0 3.57%;}
+
+    .fixHead > *:not(h1,.searchPanel){width: 15%;}
+    .fixHead > *:not(:first-child,.searchPanel){margin-left: 7.5%;}
+
+    .fixHead h1{width: 55%;}
+
+    .fixHead > div:not(.searchPanel) input[value='cart']{width: 35px;}
+    .fixHead > div:not(.searchPanel) > div{position: absolute; right: 3.57%; top: 70px; max-height: 0; overflow: hidden; transition: max-height .5s ease-in-out;}
+    .fixHead > div:not(.searchPanel) > div > *:not(:last-child){margin-bottom: var(--sp25);}
+    .fixHead > div input[value='mobBtn']{background: url('../images/main/My_Account.svg') center / 20px no-repeat;}
+    .fixHead > div input[value='mobBtn'].on{background-image: url('../images/main/arrow_drop_up_24dp_FILL0_wght400_GRAD0_opsz24.svg');}
+    .fixHead > div:not(.searchPanel) input[value='mobBtn'].on+div{max-height: 400px; overflow: inherit;}
+
+    .havecartPanel.clickmove{transition-delay: 0.9s; transition-property: right;}
+    [class*='Panel']:not(.accountPanel).clickmove{right: -15px;}
+    [class*='cartPanel']{top: -120px; right: -330px; border-radius: 14px 0 0 14px;}
+    
+    .accountPanel{right: -150px; top: 0;}
+    .accountPanel.clickmove{right: 45px;}
+    .searchPanel{width: 92.85%; right: 3.57%;}
+
+    /* ? header Fin */
+
+    footer,.indexContainer,.detailContainer,.pager,
+    [class^='aC']{margin: 0 3.57%;}
+
+    footer,.Left{display: flex; flex-direction: column; align-items: center;}
+    footer > div:first-of-type{max-width: 320px;}
+    footer > div:first-of-type > *:not(span,div),
+    footer > div:not(:nth-of-type(1),:nth-of-type(5)){text-align: center;}
+
+    footer #genderArea form > label{float: right;}
+    footer > div:not(:nth-of-type(1),:nth-of-type(n+4)){margin-bottom: 45px;}
+
+    footer > div:not(:nth-of-type(1),:nth-of-type(5)) ul{margin-top: var(--sp20); padding-top: var(--sp10);}
+
+    footer > div:nth-of-type(4){margin-bottom: var(--sp150);}
+    .Left{margin-bottom: var(--sp25);}
+    .Left a:first-of-type{margin-bottom: var(--sp10);}
+    .Left a:last-child{background-image: url('../images/main/call_ico.png');}
+    .Left a{color: var(--gs10); background-color: var(--gs04);}
+    
+    .sns li a{width: 30px; height: 30px;}
+}
+/* ? mobile Fin */
+
+@media screen and (min-width: 768px){
+    input[value='mobBtn']{display: none;}
+    .fixHead > *:not(.searchPanel){width: 33.3%;}
+
+    .fixHead > div:not(.searchPanel) > div,
+    footer > div:not(:last-of-type){display: flex;}
+    .fixHead > div:not(.searchPanel) > div > *:not(:first-child){margin-left: var(--sp25);}
+
+    [class*='Panel']:not(.searchPanel){right: 0; top: -350px;}
+    [class*='Panel'].clickmove{top: 50px;}
+    
+    /* ? header Fin */
+
+    footer{max-width: 690px;}
+    footer,[class^='aC2'] > *,.indexContainer p,.pager{margin: 0 auto;}
+    :is(footer,footer > div:nth-of-type(5)):after{content: ''; display: block; clear: both;}
+    footer > *,footer > div:nth-of-type(5) > *{float: left;}
+    
+    footer > div:not(:last-of-type){flex-direction: column; align-items: center;}
+
+    .gender{width: 320px;}
+
+    footer #genderArea{width: 46.5%;}
+    
+    footer #genderArea form > label{display: inline-flex;}
+    footer > div:not(:nth-of-type(1),:nth-of-type(5)){width: 20%; border-radius: var(--bdr10); margin-bottom: var(--sp150);}
+
+    footer > div:not(:nth-of-type(1),:nth-of-type(2),:nth-of-type(5)){margin-left: 20%;}
+    footer > div:nth-of-type(2) span{width: 73.91%;}
+    footer > div:nth-of-type(3) span{width: 55.07%;}
+    footer > div:nth-of-type(4) span{width: 60.86%;}
+
+    footer > div:not(:nth-of-type(1),:nth-of-type(5)) > *{padding: var(--sp10); box-sizing: border-box;}
+
+    footer > div:not(:nth-of-type(1),:nth-of-type(5)) ul{text-align: center; background-color: var(--gs01); box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.25); margin-top: var(--sp20);}
+    footer > div:not(:nth-of-type(1),:nth-of-type(5)) ul li a{border-radius: var(--bdr10);}
+
+    footer > div:nth-of-type(5){width: 100%;}
+    footer > div:nth-of-type(5) > *{width: 45%;}
+
+    .Left a{display: inline-block;}
+    .Left a:last-child{margin-left: var(--sp10);}
+    
+    .sns{padding-top: var(--sp20); margin-left: 10%;}
+    .sns li a{width: 45px; height: 45px;}
+    
+}
+/* ? tablet~desktop */
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    .fixHead{padding: 0 3.12%;}
+    .fixHead > div > div input[value='cart']{width: 40px;}
+    .searchPanel{width: 93.75%; right: 3.12%;}
+
+    /* ? header Fin */
+ 
+    .Left a{color: var(--gs01); background-color: var(--gs04);}
+    .Left a:last-of-type{background-image: url('../images/main/call_ico_hover.png');}
+}
+/* ? tablet Fin */
+
+@media screen and (min-width: 1280px){
+
+    .indexContainer > div:last-of-type .bx-wrapper .bx-pager{width: 350px;}
+    header button{display: none;}
+    .mrTo,
+    [class$='Container']:not([class^='footer'],[class^='list']:has(.mrTo)),
+    [class^='footer'] > *{margin-left: auto; margin-right: auto;}
+
+    .detailContainer,#dlvrTab,.wishlistContainer,.emptyContainer,
+    [class^="list"]:not([class^="list"]:has(ul.mrTo)),.even2.mrTo{max-width: 1850px;}
+    
+    .fixHead{padding: 0 1.84%;}
+    .fixHead nav ul{display: flex;}
+    .fixHead nav ul li :where(span,a),
+    .fixHead > div:not(.searchPanel) > div > a,
+    .fixHead > div:not(.searchPanel) > div > div > input[type='button']{padding: var(--sp10);}
+    
+    .fixHead nav ul li:hover span{background-color: var(--gs04); margin-bottom: var(--sp10);}
+    .fixHead nav ul > li:not(:first-child){margin-left: var(--sp45);}
+    .fixHead nav ul li:hover span + ol{display: block; background-color: var(--gs04);}
+    .fixHead nav ul li > ol,.searchPanel{width: 96.35%; left: 1.84%;}
+    .fixHead nav ul li > ol{position: absolute; padding: var(--sp10); box-sizing: border-box;}
+    .fixHead nav ul li ol:after{content: ''; display: block; clear: both;}
+    .fixHead nav ul li ol li{float: left;}
+    .fixHead nav ul li ol li:not(:first-child){margin-left: var(--sp25);}
+    .fixHead nav ul li ol li a{color: var(--gs02);}
+    .fixHead nav ul li ol li a:hover{background-color: var(--gs05); color: var(--gs06);}
+
+    .fixHead > div:not(.searchPanel) > div input:not([value='close'],[value='submit']):hover,.fixHead > div > div > a:hover{background-color: var(--gs04);}
+    .fixHead > div:not(.searchPanel) > div > a{color: var(--gs10);}
+    .fixHead > div:not(.searchPanel) > div > div > input[type='button']:not([value='account']){background-size: 15px; background-repeat: no-repeat; background-position: 10px center; padding-left: 32px;}
+    .fixHead > div:not(.searchPanel) > div input[value='cart']{background-image: url('../images/main/mf-icn-cart.svg');}
+    .fixHead > div:not(.searchPanel) > div input[value='search']{background-image: url('../images/main/mf-icn-search.svg'); text-transform: capitalize;} 
+    
+    .wishcaption:after{top: 10px; right: 5px;}
+    .accountPanel ol li:hover a{background-color: var(--gs03);}
+
+    /* ? header Fin */
+
+    footer > div:not(:nth-of-type(1),:nth-of-type(5)) span:hover{background-color: var(--gs04);}
+    .Left a{color: var(--gs10);}
+    :is(footer > div:not(:nth-of-type(1),:nth-of-type(5)) ul li,.Left) a:hover{background-color: var(--gs04); color: var(--gs01);}
+    .Left a:last-child{background-image: url('../images/main/call_ico.png');}
+    .Left a:last-child:hover{background-image: url('../images/main/call_ico_hover.png');}
+
+}
+/* ? desktop Fin */
