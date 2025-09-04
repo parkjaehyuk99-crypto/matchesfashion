@@ -161,8 +161,8 @@ div:has(.guidePopup.active){
 .guidePopup strong{text-transform: capitalize; text-align: center;}
 .guidePopup strong b{display: block;}
 .guidePopup p{margin-bottom: 20px;}
-.guidePopup span{margin-top: 20px;}
-.guidePopup a{color: var(--gs07); text-align: center;}
+.guidePopup a{color: var(--gs10); text-align: center;}
+
 @media screen and (max-width: 767px){
 
     :root{
