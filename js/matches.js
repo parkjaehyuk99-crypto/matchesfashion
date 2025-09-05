@@ -66,11 +66,15 @@ function eventToggle(target){
         switch(target){
         case ".mui":
             $(this).toggleClass("rotate");
+            if(window.matchMedia('(max-width: 767px').matches){
+                $("header > div input[value='mobBtn']").removeClass('on');
+            }
             break;
         
         case "header > div input[value='mobBtn']":
             if(window.matchMedia('(max-width: 767px)').matches){
                 $(this).toggleClass('on');
+                $('.mui').removeClass('rotate');
             }
             break;
 
@@ -197,6 +201,12 @@ function footerEvent(){
 }
 
 function listopenFilter(target){
+    if($('.pager ol li').length == 1){
+        $('.pager > a').click(function(e){
+            e.preventDefault();
+        });
+    } 
+
     $(target).click(function(){
         switch(target){
             case "[class^='list'] > div > button":
@@ -492,10 +502,13 @@ function mypageEvent(target){
                 break;
 
             case ".addList > input":
-                $(this).next().addClass('active');
                 $(this).addClass('remove');
                 $(this).parent().addClass('active');
                 $(this).next().addClass('active');
+                window.scrollTo({
+                    top: 300,
+                    behavior: "smooth"
+                });
                 break;
 
             case ".addList form input[type='reset']":

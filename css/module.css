@@ -108,7 +108,7 @@ select{
     padding: var(--sp10) var(--sp20); transition: all 0.5s ease;
 }
 .indexContainer > div > [class*='btn']{position: absolute; left: 50%; transform: translateX(-50%);}
-.backBtn{width: 75px; font-size: 18px; text-transform: uppercase;}
+.backBtn{font-size: 18px; text-transform: uppercase;}
 [class^='footer'] .backBtn{float: right;}
 :where(.wishlistContainer,.emptyContainer) .backBtn{display: block; margin-left: auto;}
 
@@ -197,7 +197,8 @@ div:has(.guidePopup.active){
         font-size: 18px;
         font-weight: 700;
     }
-    .backBtn:after{display: inline-block; margin-left: 10px;}
+    .backBtn{font-size: 0;}
+    .backBtn:after{display: inline-block; margin-left: 10px; height: 35px; vertical-align: bottom;}
     [class^='footer']:not([class*='abo'],[class*='faq'],[class*='ret']) .backBtn:after{content: url('../images/btn/before_sim.png');}
     [class^='footer1']:not(.footer1conContaeinr) .backBtn:after{content: url('../images/footer/btn_sim_hover.png');}
     .backBtn{color: transparent;}
