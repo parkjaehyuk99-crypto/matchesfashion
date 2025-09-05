@@ -980,7 +980,7 @@ input[value='bookmark'].active{
     [class^='list'] > div.change > button:after{content: url('../images/btn/apply_sim_rotate.png');}
     [class^='list'] > div.change > button:hover:after{content: url('../images/btn/apply_sim_rotate_hover.png');}
     
-    #applyPanel{left: -26%; width: 24.5%;}
+    #applyPanel{width: 24.5%;}
     #applyPanel.active{left: -1.65%;}
 
     #applyPanel ul > li:has(button:hover){background-color: var(--gs03); transition: ease 0.3s;}

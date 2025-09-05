@@ -55,7 +55,7 @@
     
 }
 
-footer span,a, header span,input,button,ol:has(li.default) li:not(:first-child),.accComponent h3,.selectComponent{cursor: pointer;}
+footer > div:not(:first-of-type,:last-of-type) span,a, header span,input,button,ol:has(li.default) li:not(:first-child),.accComponent h3,.selectComponent{cursor: pointer;}
 li{list-style: none;}
 
 input[value='close'],input[value='remove']:not(.aC2cartContainer > ul li:nth-child(n+2) input),.btnCw,.btnCb{display: inline-block;}

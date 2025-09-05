@@ -232,7 +232,7 @@ footer{margin-bottom: var(--sp20) !important;}
     .fixHead nav button span{width: 20px; background-color: var(--gs10); height: 2px; margin-bottom: 3px; transition: all 0.3s ease-in-out 0s;}
     
     .fixHead nav ul{
-        top: 68px; width: 260px; border-radius: 0 var(--bdr20) var(--bdr20) 0; padding-left: var(--sp35); padding-right: var(--sp35);
+        top: 70px; width: 260px; border-radius: 0 var(--bdr20) var(--bdr20) 0; padding-left: var(--sp35); padding-right: var(--sp35);
         left: -0.5%; z-index: 5; background-color: var(--gs04); box-sizing: border-box;
         max-height: 0; overflow: hidden; transition: all 0.4s ease-in-out;
     }
