@@ -292,7 +292,7 @@ footer{margin-bottom: var(--sp20) !important;}
 
     /* ? header Fin */
 
-    footer,.indexContainer,.detailContainer,.pager,
+    footer,.indexContainer,.detailContainer,.pager,.emptyContainer,
     [class^='aC']{margin: 0 3.57%;}
 
     footer,.Left{display: flex; flex-direction: column; align-items: center;}

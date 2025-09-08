@@ -108,9 +108,9 @@ select{
     padding: var(--sp10) var(--sp20); transition: all 0.5s ease;
 }
 .indexContainer > div > [class*='btn']{position: absolute; left: 50%; transform: translateX(-50%);}
-.backBtn{font-size: 18px; text-transform: uppercase;}
+.backBtn{text-transform: uppercase;}
 [class^='footer'] .backBtn{float: right;}
-:where(.wishlistContainer,.emptyContainer) .backBtn{display: block; margin-left: auto;}
+:where(.wishlistContainer,.emptyContainer) .backBtn{display: block; margin-left: auto; width: 75px;}
 
 .addList [class$='Btn'],[class^='aC1'] .saveBtn{
     padding: var(--sp10) var(--sp15); width: 80px; box-sizing: border-box; text-align: left; 
@@ -198,10 +198,10 @@ div:has(.guidePopup.active){
         font-weight: 700;
     }
     .backBtn{font-size: 0;}
+    :where(.wishlistContainer,.emptyContainer) .backBtn{text-align: right;}
     .backBtn:after{display: inline-block; margin-left: 10px; height: 35px; vertical-align: bottom;}
-    [class^='footer']:not([class*='abo'],[class*='faq'],[class*='ret']) .backBtn:after{content: url('../images/btn/before_sim.png');}
+    [class$='Container']:not([class*='abo'],[class*='faq'],[class*='ret']) .backBtn:after{content: url('../images/btn/before_sim.png');}
     [class^='footer1']:not(.footer1conContaeinr) .backBtn:after{content: url('../images/footer/btn_sim_hover.png');}
-    .backBtn{color: transparent;}
     .wishlistContainer input[value='remove']{width: 40px; height: 40px; top: 20px; right: 20px; background-image: url('../images/account/wishlist_remove_ico_mobile.png'); background-color: rgba(0, 0, 0, 0.3); border-radius: 10px;}
     .indexContainer > div > [class*='btn']{bottom: 30px;}
     .mobcheck{display: block; width: 100%; margin-top: var(--sp50); padding: var(--sp20) 0; background-color: var(--ss08); border-radius: 10px; color: var(--gs01);}
@@ -350,6 +350,7 @@ div:has(.guidePopup.active){
         --sp180: 180px;
         --sp220: 220px;
     }
+    .backBtn{font-size: 18px;}
     .backBtn:before{content: url('../images/btn/before_sim.png'); display: inline-block; margin-right: 10px;}
     :where(.wishlistContainer,.emptyContainer) .backBtn{color: var(--gs10);}
     :where([class^='footer1']:not(.footer1conContainer)) .backBtn:before{content: url('../images/footer/btn_sim_hover.png');} 

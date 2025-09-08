@@ -422,34 +422,38 @@ function popupEvent(target){
 
         switch(target){
             case "input[value='remove']":
-                
-                var remove = "." + $(this).val() + "Popup";
-                var obj = $(this).parent();
+                var remove = "." + $(this).attr('class') + "Popup";
+                var targetList = $(this).parent();
 
                 $(remove).addClass('active');
-                
-                $('.removePopup input').click(function(){
-                    var okey = $(this).val();
-                    
-                    if(okey == 'Yes'){
-                        obj.remove();
+
+                $('.removePopup input').on('click',function(){
+                    var inputValue = $(this).val();
+                    var targetArea = $('.removePopup').next().attr('class');
+                    console.log(targetArea);
+                    if(inputValue == 'Yes' && targetArea == 'aC2cartContainer'){
+                        targetList.remove();
                         $(remove).removeClass('active');
+
                         $('.aC2cartContainer > ul li strong').each(function(){
                             disCount = parseInt($(this).text().replace(nonSimbol,''));
                         });
                         $('.resultCon strong').text("$" + disCount);
 
-                        var cartLength = $('.aC2cartContainer > ul li:not(:first-child)');
-                        var wishLength = $('.wishlistContainer ul li');
+                        var cartList = $('.aC2cartContainer > ul li:not(:first-child)').length;
+                        if(cartList < 2){
+                            $('.aC2cartContainer > ul li:not(:first-child)').find(".remove").remove();
+                        }
 
-                        if(cartLength.length < 2){
-                            cartLength.find('input').remove();
+                    }else if(inputValue == 'Yes' && targetArea == 'wishlistContainer'){
+                        targetList.remove();
+                        $(remove).removeClass('active');
+
+                        var wishList = $('.wishlistContainer > ul li').length;
+                        if(wishList < 1){
+                            window.location.href = "wishlist_empty.html";
                         }
-                        if(wishLength.length < 1){
-                            window.location.href = "wishlist_empty.html"
-                        }
-                    
-                    }else{
+                    }else if(inputValue == 'No'){
                         $(remove).removeClass('active');
                     };
                 });
