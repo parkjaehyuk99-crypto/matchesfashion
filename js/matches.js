@@ -430,7 +430,7 @@ function popupEvent(target){
                 $('.removePopup input').on('click',function(){
                     var inputValue = $(this).val();
                     var targetArea = $('.removePopup').next().attr('class');
-                    console.log(targetArea);
+                    
                     if(inputValue == 'Yes' && targetArea == 'aC2cartContainer'){
                         targetList.remove();
                         $(remove).removeClass('active');
